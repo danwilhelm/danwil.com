@@ -1,0 +1,3 @@
+Visus Plug-in for Yorick
+
+Parallel I/O, efficient level-of-detail queries, and support for restarts with an arbitrary number of processors are provided as a Visus plug-in for Yorick. The plug-in allows near-interactive visualization of results from pf3d, a laser-plasma interaction code that runs on large supercomputers, and from any general large-scale scientific visualization. High-level routines are also provided which facilitate data viewing and interpretation.

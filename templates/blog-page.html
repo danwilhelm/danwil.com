@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section>
+  <h1 class="title">
+    {{ page.title }}
+  </h1>
+
+  <p>
+    <label for="mn-toc" class="margin-toggle"></label>
+    <input type="checkbox" id="mn-toc" class="margin-toggle"/>
+
+    <code>{{ page.date }}</code>
+
+    <span class="marginnote">
+      Table of Contents<br/>
+      {% for s in page.toc %}
+        &bull; <a href="{{ s.permalink | safe }}" class="toc-header">{{ s.title }}</a><br/>
+      {% endfor %}
+    </span>
+  </p>
+
+</section>
+
+{{ page.content | safe }}
+{% endblock content %}
